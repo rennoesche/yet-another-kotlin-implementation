@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ExtDialog"
+    android:padding="16dp"
+    android:background="@color/md_theme_light_onPrimary">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tambahkan Data"
+        android:textColor="@color/md_theme_light_onPrimaryContainer"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"/>
+    <com.google.android.material.divider.MaterialDivider
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        style="?attr/textInputFilledStyle"
+        android:id="@+id/inputLayoutNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="16dp"
+        style="?attr/textInputFilledStyle"
+        android:id="@+id/inputLayoutAsal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Asal">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end">
+        <Button
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            style="@style/Widget.Material3.Button.Icon"
+            android:id="@+id/simpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            app:icon="@drawable/ic_check" />
+        <Button
+            android:layout_marginTop="16dp"
+            style="?attr/materialButtonOutlinedStyle"
+            android:id="@+id/hapus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hapus"
+            android:textAlignment="center"
+            app:icon="@drawable/ic_close" />
+    </LinearLayout>
+
+</LinearLayout>

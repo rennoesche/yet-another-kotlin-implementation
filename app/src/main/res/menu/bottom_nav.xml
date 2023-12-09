@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_yak"
+        android:enabled="true"
+        android:icon="@drawable/nav_yak"
+        android:title="Yak!" />
+    <item
+        android:id="@+id/nav_ext"
+        android:enabled="true"
+        android:icon="@drawable/nav_ext"
+        android:title="Add-ons" />
+    <item
+        android:id="@+id/nav_timer"
+        android:enabled="true"
+        android:icon="@drawable/nav_timer"
+        android:title="Pewaktu" />
+    <item
+        android:id="@+id/nav_profil"
+        android:enabled="true"
+        android:icon="@drawable/nav_usr"
+        android:title="Profil" />
+</menu>
